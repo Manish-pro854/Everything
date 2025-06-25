@@ -1,10 +1,13 @@
 import React from 'react'
+import Navbar from './Components/Navbar/Navbar'
+import Footer from './Components/Footer/Footer'
 
 const App = () => {
   return (
-    <div>
-      <h1 className='h-screen bg-amber-400 text-9xl text-center'>Minku Don</h1>
-    </div>
+    <>
+    <Navbar/>
+    <Footer/>
+    </>
   )
 }
 
