@@ -5,6 +5,7 @@ import Stores from './Components/Pages/Stores'
 import Events from './Components/Pages/Events'
 import Offers from './Components/Pages/Offers'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Food from './Components/Pages/Food'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path='/stores' element={<Stores/>}/>
         <Route path='/events' element={<Events/>}/>
         <Route path='/offers' element={<Offers/>}/>
+        <Route path='/food' element={<Food/>}/>
       </Routes>
       <Footer/>
     </Router>
