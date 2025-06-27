@@ -12,6 +12,7 @@ import { PiCurrencyCircleDollar } from "react-icons/pi";
 import { FaRegNewspaper } from "react-icons/fa";
 import { MdPermDeviceInformation } from "react-icons/md";
 import { MdFastfood } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,11 +32,11 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center justify-between">
           <ul className="flex items-center justify-center gap-8 text-xl">
             <li className="hover:border-b-2 pb-1">Stores</li>
-            <li className="hover:border-b-2 pb-1">Events</li>
-            <li className="hover:border-b-2 pb-1">Offers</li>
+            <Link to="/events"><li className="hover:border-b-2 pb-1">Events</li></Link>
+            <Link to="/offers"><li className="hover:border-b-2 pb-1">Offers</li></Link>
             <li className="hover:border-b-2 pb-1">Food+Drink</li>
             <li className="hover:border-b-2 pb-1">News</li>
-            <li className="hover:border-b-2 pb-1">Center Information</li>
+            <li className="hover:border-b-2 pb-1">Business Premises</li>
           </ul>
           <div className="flex items-center justify-center gap-5 mr-5">
             <LuClock className="text-3xl" />
