@@ -22,21 +22,25 @@ const Navbar = () => {
 
   return (
     <div id="navbar" className="fixed bg-white">
-
-      <div className="grid grid-cols-3 md:grid-cols-[27%_73%] h-20 relative">
-        
+      <div className="grid grid-cols-3 md:grid-cols-[22%_78%] h-20 relative">
         <div className="h-62 w-62 -mt-45 -ml-6 md:h-70 md:w-70 md:-mt-50 z-50">
           <img src={logo} alt="logo" className="mt-23 md:mt-25" />
         </div>
 
         <div className="hidden lg:flex items-center justify-between">
           <ul className="flex items-center justify-center gap-8 text-xl">
-            <li className="hover:border-b-2 pb-1">Stores</li>
-            <Link to="/events"><li className="hover:border-b-2 pb-1">Events</li></Link>
-            <Link to="/offers"><li className="hover:border-b-2 pb-1">Offers</li></Link>
-            <li className="hover:border-b-2 pb-1">Food+Drink</li>
-            <li className="hover:border-b-2 pb-1">News</li>
-            <li className="hover:border-b-2 pb-1">Business Premises</li>
+            <Link to="/stores">
+              <li className="hover:border-b-2 pb-1">Stores</li>
+            </Link>
+            <Link to="/events">
+              <li className="hover:border-b-2 pb-1">Events</li>
+            </Link>
+            <Link to="/offers">
+              <li className="hover:border-b-2 pb-1">Offers</li>
+            </Link>
+            <Link to="/food"><li className="hover:border-b-2 pb-1">Food+Drink</li></Link>
+            <Link to="/entertainment"><li className="hover:border-b-2 pb-1">Entertainment</li></Link>
+            <Link to="/rent"><li className="hover:border-b-2 pb-1">Business Premises</li></Link>
           </ul>
           <div className="flex items-center justify-center gap-5 mr-5">
             <LuClock className="text-3xl" />
