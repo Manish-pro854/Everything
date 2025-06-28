@@ -5,10 +5,18 @@ import yoga from "../../assets/yoga.jpg";
 import trends from "../../assets/trends.jpg";
 import concert from "../../assets/concert.png";
 import music from "../../assets/music.jpg";
+import eventsbg from "../../assets/events-bg.jpg";
 
 const Events = () => {
   return (
-    <div id="events" className="pt-45 md:pt-40 lg:pt-30">
+    <div id="events" className="pt-40 md:pt-30 lg:pt-20">
+      <div className="w-full h-[70vh] overflow-hidden">
+        <img
+          src={eventsbg}
+          alt="Mall Interior"
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
       <h1 className="text-center text-6xl pb-5">Events</h1>
       <ul className="flex flex-col gap-5 pb-10">
       <EventCard title={"INEOS Grenadier"} discription={"MileOne Autogroup presents the INEOS Grenadier -- the ultimate go-anywhere vehicle, whether you're n..."} link={"Ongoing"} image={jeep}/>

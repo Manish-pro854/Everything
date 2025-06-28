@@ -38,22 +38,30 @@ const Navbar = () => {
             <Link to="/offers">
               <li className="hover:border-b-2 pb-1">Offers</li>
             </Link>
-            <Link to="/food"><li className="hover:border-b-2 pb-1">Food+Drink</li></Link>
-            <Link to="/entertainment"><li className="hover:border-b-2 pb-1">Entertainment</li></Link>
-            <Link to="/rent"><li className="hover:border-b-2 pb-1">Business Premises</li></Link>
+            <Link to="/food">
+              <li className="hover:border-b-2 pb-1">Food+Drink</li>
+            </Link>
+            <Link to="/entertainment">
+              <li className="hover:border-b-2 pb-1">Entertainment</li>
+            </Link>
+            <Link to="/rent">
+              <li className="hover:border-b-2 pb-1">Business Premises</li>
+            </Link>
           </ul>
           <div className="flex items-center justify-center gap-5 mr-5">
-            <LuClock className="text-3xl" />
+            <Link to="/clock">
+              <LuClock className="text-3xl" />
+            </Link>
             <CiLocationOn className="text-3xl" />
             <FaCartShopping className="text-3xl" />
           </div>
         </div>
 
-        <div className="flex items-center justify-center md:hidden gap-2 absolute left-[55%] top-6">
-          <LuClock className="h-6 w-6" />
+        {/* <div className="flex items-center justify-center md:hidden gap-2 absolute left-[55%] top-6">
+          <Link to="/clock"><LuClock className="h-6 w-6" /></Link>
           <CiLocationOn className="h-6 w-6" />
           <ImHome className="h-6 w-6" />
-        </div>
+        </div> */}
       </div>
 
       <img
@@ -93,56 +101,69 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div id="mobilemenu" className="lg:hidden">
+        <div id="mobilemenu" className="lg:hidden w-full">
           <ul className="flex flex-col items-center justify-center w-full">
-            <li
-              onClick={closeMenu}
-              className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
-            >
-              <ImHome className="h-8 w-8 text-green-300" /> Stores
-            </li>
-            <li
-              onClick={closeMenu}
-              className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
-            >
-              <CiViewList className="h-8 w-8 text-green-300" /> Events
-            </li>
-            <li
-              onClick={closeMenu}
-              className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
-            >
-              <PiCurrencyCircleDollar className="h-8 w-8 text-green-300" />{" "}
-              Offers
-            </li>
-            <li
-              onClick={closeMenu}
-              className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
-            >
-              <MdFastfood className="h-8 w-8 text-green-300" /> Food+Drinks
-            </li>
-            <li
-              onClick={closeMenu}
-              className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
-            >
-              <FaRegNewspaper className="h-8 w-8 text-green-300" /> News
-            </li>
-            <li
-              onClick={closeMenu}
-              className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
-            >
-              <MdPermDeviceInformation className="h-8 w-8 text-green-300" />{" "}
-              Center Information
-            </li>
+            <Link to="/stores" className="w-full">
+              <li
+                onClick={closeMenu}
+                className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
+              >
+                <ImHome className="h-8 w-8 text-green-300" /> Stores
+              </li>
+            </Link>
+            <Link to="/events" className="w-full">
+              <li
+                onClick={closeMenu}
+                className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
+              >
+                <CiViewList className="h-8 w-8 text-green-300" /> Events
+              </li>
+            </Link>
+            <Link to="/offers" className="w-full">
+              <li
+                onClick={closeMenu}
+                className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
+              >
+                <PiCurrencyCircleDollar className="h-8 w-8 text-green-300" />{" "}
+                Offers
+              </li>
+            </Link>
+            <Link to="/food" className="w-full">
+              <li
+                onClick={closeMenu}
+                className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
+              >
+                <MdFastfood className="h-8 w-8 text-green-300" /> Food+Drinks
+              </li>
+            </Link>
+            <Link to="/entertainment" className="w-full">
+              <li
+                onClick={closeMenu}
+                className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
+              >
+                <FaRegNewspaper className="h-8 w-8 text-green-300" />{" "}
+                Entertainment
+              </li>
+            </Link>
+            <Link to="/rent" className="w-full">
+              <li
+                onClick={closeMenu}
+                className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
+              >
+                <MdPermDeviceInformation className="h-8 w-8 text-green-300" />{" "}
+                Business Premises
+              </li>
+            </Link>
           </ul>
         </div>
       )}
 
       {!menuOpen && (
         <div className="lg:hidden grid grid-cols-2 md:grid-cols-[40%_30%_30%] shadow-lg">
-          <div className="flex items-center justify-center gap-2 col-span-2 md:col-auto p-1 md:p-3 border-b md:border-0 border-amber-200">
+          <Link to="/clock" className="col-span-2 md:col-auto"><div className="flex items-center justify-center gap-2 p-1 md:p-3 border-b md:border-0 border-amber-200">
             <LuClock className="h-6 w-6 md:h-7 md:w-7 text-green-300" />
             <h1 className="text-xl">Open 9:00am - 5pm today</h1>
-          </div>
+          </div></Link>
           <div className="flex items-center justify-center gap-2 p-1 md:p-3 border-r border-amber-200 md:border-x">
             <CiLocationOn className="h-6 w-6 md:h-7 md:w-7 text-green-300" />
             <h1 className="text-xl">Getting here</h1>

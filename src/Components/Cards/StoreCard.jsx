@@ -1,9 +1,4 @@
 import React from 'react'
-import { FaAngleRight } from "react-icons/fa6";
-import addidas from "../../assets/addidas.svg"
-import shoes from "../../assets/shoes.jpg"
-import socks from "../../assets/socks.jpg"
-import tshirt from "../../assets/tshirt.jpg"
 
 const StoreCard = ({ logo, title, discription, image1, image2, image3 }) => {
   return (
