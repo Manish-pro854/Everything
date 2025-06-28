@@ -21,11 +21,9 @@ const Navbar = () => {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <div id="navbar" className="fixed bg-white">
-      <div className="grid grid-cols-3 md:grid-cols-[22%_78%] h-20 relative">
-        <div className="h-62 w-62 -mt-45 -ml-6 md:h-70 md:w-70 md:-mt-50 z-50">
-          <img src={logo} alt="logo" className="mt-23 md:mt-25" />
-        </div>
+    <div id="navbar" className="fixed bg-white z-50 w-full">
+      <div className="grid grid-cols-2 lg:grid-cols-[22%_78%] h-16 md:h-20 relative">
+          <img src={logo} alt="logo" className="h-15 pl-2 pt-3 md:h-20 md:pl-5 md:py-3 lg:pt-4 lg:h-19 lg:pl-2" />
 
         <div className="hidden lg:flex items-center justify-between">
           <ul className="flex items-center justify-center gap-8 text-xl">
@@ -52,16 +50,12 @@ const Navbar = () => {
             <Link to="/clock">
               <LuClock className="text-3xl" />
             </Link>
-            <CiLocationOn className="text-3xl" />
-            <FaCartShopping className="text-3xl" />
+            <Link to="/location">
+              <CiLocationOn className="text-3xl" />
+            </Link>
+            <Link to="/cart"><FaCartShopping className="text-3xl" /></Link>
           </div>
         </div>
-
-        {/* <div className="flex items-center justify-center md:hidden gap-2 absolute left-[55%] top-6">
-          <Link to="/clock"><LuClock className="h-6 w-6" /></Link>
-          <CiLocationOn className="h-6 w-6" />
-          <ImHome className="h-6 w-6" />
-        </div> */}
       </div>
 
       <img
@@ -157,21 +151,28 @@ const Navbar = () => {
           </ul>
         </div>
       )}
-
       {!menuOpen && (
-        <div className="lg:hidden grid grid-cols-2 md:grid-cols-[40%_30%_30%] shadow-lg">
-          <Link to="/clock" className="col-span-2 md:col-auto"><div className="flex items-center justify-center gap-2 p-1 md:p-3 border-b md:border-0 border-amber-200">
+        <div className="lg:hidden grid grid-cols-2 md:grid-cols-3 shadow-lg w-full z-30 bg-white">
+          <Link
+            to="/clock"
+            className="flex items-center justify-center gap-2 p-2 md:p-3 border-b md:border-0 border-amber-200 col-span-2 md:col-span-1 w-full"
+          >
             <LuClock className="h-6 w-6 md:h-7 md:w-7 text-green-300" />
-            <h1 className="text-xl">Open 9:00am - 5pm today</h1>
-          </div></Link>
-          <div className="flex items-center justify-center gap-2 p-1 md:p-3 border-r border-amber-200 md:border-x">
+            <h1 className="text-base md:text-xl">Open 9:00am - 5pm today</h1>
+          </Link>
+
+          <Link
+            to="/location"
+            className="flex items-center justify-center gap-2 p-2 md:p-3 border-t md:border-x border-amber-200 md:col-span-1 w-full border-r" 
+          >
             <CiLocationOn className="h-6 w-6 md:h-7 md:w-7 text-green-300" />
-            <h1 className="text-xl">Getting here</h1>
-          </div>
-          <div className="flex items-center justify-center gap-2 p-1 md:p-3">
-            <ImHome className="h-6 w-6 md:h-7 md:w-7 text-green-300" />
-            <h1 className="text-xl">Find a store</h1>
-          </div>
+            <h1 className="text-base md:text-xl">Getting here</h1>
+          </Link>
+
+          <Link to="/cart" className="flex items-center justify-center gap-2 p-2 md:p-3 border-t border-amber-200 md:col-span-1">
+            <FaCartShopping className="h-6 w-6 md:h-7 md:w-7 text-green-300" />
+            <h1 className="text-base md:text-xl">Cart</h1>
+          </Link>
         </div>
       )}
     </div>
