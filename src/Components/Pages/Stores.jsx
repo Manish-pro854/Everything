@@ -21,6 +21,7 @@ import car from "../../assets/car.jpeg";
 import barbie from "../../assets/barbie.webp";
 import ironmen from "../../assets/ironmen.webp";
 import storebg from "../../assets/store-bg.jpg";
+import { Link } from "react-router-dom";
 
 const Stores = () => {
   return (
@@ -34,7 +35,7 @@ const Stores = () => {
       </div>
       <h1 className="text-center text-6xl pb-5">Stores</h1>
       <ul className="flex flex-col gap-5 pb-10">
-        <StoreCard
+        <Link to="/stores/addidas"><StoreCard
           logo={addidas}
           title={"Addidas: Shoes, Clothing & More"}
           discription={
@@ -43,7 +44,7 @@ const Stores = () => {
           image1={shoes}
           image2={socks}
           image3={tshirt}
-        />
+        /></Link>
 
         <StoreCard
           logo={titan}

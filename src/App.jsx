@@ -11,6 +11,7 @@ import Businees from './Components/Pages/Businees'
 import Clock from './Components/Pages/Clock'
 import Location from './Components/Pages/Location'
 import Cart from './Components/Pages/Cart'
+import Addidas from './Components/Stores/Addidas'
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path='/clock' element={<Clock/>}/>
         <Route path='/location' element={<Location/>}/>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/stores/addidas' element={<Addidas/>}/>
       </Routes>
       <Footer/>
     </Router>
