@@ -32,12 +32,12 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col items-start justify-center gap-4">
-          <h1 className="flex items-center justify-center gap-2">
+          <div className="flex items-center justify-center gap-2">
             <CiLocationOn className="text-2xl text-green-400" />
             <h2 className="flex flex-col items-start justify-center">
               Find Us <span>160–194 Main Street, Bacchus Marsh</span>
             </h2>
-          </h1>
+          </div>
           <h1 className="flex items-center justify-center gap-2">
             <LuClock className="text-2xl text-green-400" />
             <span>Opening Hours</span>
