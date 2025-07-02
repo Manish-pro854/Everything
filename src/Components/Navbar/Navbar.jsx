@@ -22,8 +22,8 @@ const Navbar = () => {
 
   return (
     <div id="navbar" className="fixed bg-white z-50 w-full">
-      <div className="grid grid-cols-2 lg:grid-cols-[22%_78%] h-16 md:h-20 relative">
-          <img src={logo} alt="logo" className="h-15 pl-2 pt-3 md:h-20 md:pl-5 md:py-3 lg:pt-4 lg:h-19 lg:pl-2" />
+       <div className="grid grid-cols-2 lg:grid-cols-[22%_78%] h-16 md:h-20 relative">
+          <Link to="/" className="outline-0"><img src={logo} alt="logo" className="h-15 pl-2 pt-3 md:h-20 md:pl-5 md:py-3 lg:pt-4 lg:h-19 lg:pl-2" /></Link>
 
         <div className="hidden lg:flex items-center justify-between">
           <ul className="flex items-center justify-center gap-8 text-xl">

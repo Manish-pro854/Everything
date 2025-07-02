@@ -59,241 +59,409 @@ import image58 from "./assets/image58.jpg"
 export const dummydata = [
   {
     "id":1,
-    "name": "Lola",
-    "price":13999,
+    "name": "Adidas Court Classic – White & Black Edition",
+    "price":"4,999",
     "category": "Addidas",
     "image":image1
   },
   {
     "id":2,
-    "name": "Lola",
-    "price":13999,
+    "name": "Adidas Superstar Black Edition – Street Classic",
+    "price":"6,299",
     "category": "Addidas",
     "image":image2
   },
   {
     "id":3,
-    "name": "Lola",
-    "price":13999,
+    "name": "Adidas Aeroready Gym Tank – Performance Grey",
+    "price":"1,899",
     "category": "Addidas",
     "image":image3
   },
   {
     "id":4,
-    "name": "Lola",
-    "price":13999,
+    "name": "Adidas Originals Track Jacket – Black Heritage Edition",
+    "price":"4,299",
     "category": "Addidas",
     "image":image4
   },
   {
     "id":5,
-    "name": "Lola",
-    "price":13999,
+    "name": "Adidas Originals Superstar II (black)",
+    "price":"11,999",
     "category": "Addidas",
     "image":image5
   },
   {
     "id":6,
-    "name": "Lola",
-    "price":13999,
+    "name": "Puma Smashic (unisex)",
+    "price":"1,799",
     "category": "Addidas",
     "image":image6
   },
   {
     "id":7,
-    "name": "Lola",
-    "price":13999,
+    "name": "White Adidas Samba OG",
+    "price":"10,999",
     "category": "Addidas",
     "image":image7
   },
   {
     "id":8,
-    "name": "Lola",
-    "price":13999,
+    "name": "Tennis Outfit with Nike T‑shirt",
+    "price":"2,495",
     "category": "Addidas",
     "image":image8
   },
   {
     "id":9,
-    "name": "Lola",
-    "price":13999,
+    "name": "Adidas Men's Brown Casual Sneakers – Street Style Edition",
+    "price":"4,299",
     "category": "Addidas",
     "image":image9
   },
   {
     "id":10,
-    "name": "Lola",
-    "price":13999,
+    "name": "Adidas White Classic Sneakers – Everyday Comfort & Style",
+    "price":"3,999",
     "category": "Addidas",
     "image":image10
   },
   {
     "id":11,
-    "name": "Lola",
-    "price":13999,
+    "name": "Adidas White Sports T-Shirt – Breathable Performance Wear",
+    "price":"1,799",
     "category": "Addidas",
     "image":image11
   },
   {
     "id":12,
-    "name": "Lola",
-    "price":13999,
-    "category": "Titan",
+    "name": "Apple Watch Combo Pack (Set of 3) – Smart Style & Innovation",
+    "price":"74,999",
+    "category": "Apple",
     "image":image12
   },
   {
     "id":13,
-    "name": "Lola",
-    "price":13999,
-    "category": "Titan",
+    "name": "Apple iPhone 12 (Blue, 128GB) – Sleek. Powerful. Iconic.",
+    "price":"52,999",
+    "category": "Apple",
     "image":image13
   },
   {
     "id":14,
-    "name": "Lola",
-    "price":13999,
-    "category": "Titan",
+    "name": "Apple iPad (Silver, 10.2-inch, 64GB Wi-Fi) – Sleek Performance on the Go",
+    "price":"29,999",
+    "category": "Apple",
     "image":image14
   },
   {
     "id":15,
-    "name": "Lola",
-    "price":13999,
-    "category": "Titan",
+    "name": "Apple iMac (24-inch, M1, White) – All-in-One Powerhouse for Creative Work",
+    "price":"1,14,900",
+    "category": "Apple",
     "image":image15
   },
   {
     "id":16,
-    "name": "Lola",
-    "price":13999,
-    "category": "Titan",
+    "name": "Apple iPhone SE (2nd Gen, Single Camera) – Compact & Powerful",
+    "price":"22,999",
+    "category": "Apple",
     "image":image16
   },
   {
     "id":17,
-    "name": "Lola",
-    "price":13999,
-    "category": "Titan",
+    "name": "Apple iPhone 15 (128GB) – Sleek Design. Dynamic Island. A16 Power.",
+    "price":"76,990",
+    "category": "Apple",
     "image":image17
   },
   {
     "id":18,
-    "name": "Lola",
-    "price":13999,
-    "category": "Titan",
+    "name": "Apple AirPods (2nd Gen) – Effortless Wireless Audio",
+    "price":"11,999",
+    "category": "Apple",
     "image":image18
   },
   {
     "id":19,
-    "name": "Lola",
-    "price":13999,
-    "category": "Titan",
+    "name": "Apple iPad Air (10.9-inch, Wi-Fi, 64GB, Space Grey) – Light. Fast. Stunning Display.",
+    "price":"54,900",
+    "category": "Apple",
     "image":image19
   },
   {
     "id":20,
-    "name": "Lola",
-    "price":13999,
-    "category": "Titan",
+    "name": "Apple AirPods Pro (2nd Gen, USB-C) – Noise Cancellation. Immersive Clarity.",
+    "price":"24,900",
+    "category": "Apple",
     "image":image20
   },
   {
     "id":21,
-    "name": "Lola",
-    "price":13999,
-    "category": "Titan",
+    "name": "Apple iPad Pro (11-inch, M2, 128GB, Wi-Fi) – Ultimate Power. Pro Performance.",
+    "price":"94,900",
+    "category": "Apple",
     "image":image21
   },
   {
     "id":22,
-    "name": "Lola",
-    "price":13999,
+    "name": "Titan Men's Black Dial Analog Watch – Bold Elegance in Every Tick",
+    "price":"3,499",
     "category": "Titan",
     "image":image22
   },
   {
     "id":23,
-    "name": "Lola",
-    "price":13999,
+    "name": "Titan Men's Blue Dial Watch – Timeless Style with a Cool Edge",
+    "price":"3,999",
     "category": "Titan",
     "image":image23
   },
   {
     "id":24,
-    "name": "Lola",
-    "price":13999,
+    "name": "Titan Men's Classic Analog Watch – Elegance that Never Goes Out of Style",
+    "price":"2,999",
     "category": "Titan",
     "image":image24
   },
   {
     "id":25,
-    "name": "Lola",
-    "price":13999,
+    "name": "Titan Men's Silver Metal Strap Watch – Sophisticated Shine, Everyday Precision",
+    "price":"4,499",
     "category": "Titan",
     "image":image25
   },
   {
     "id":26,
-    "name": "Lola",
-    "price":13999,
+    "name": "Titan Women's Pink Dial Watch – Grace in Every Glance",
+    "price":"3,299",
     "category": "Titan",
     "image":image26
   },
   {
     "id":27,
-    "name": "Lola",
-    "price":13999,
+    "name": "Titan Digital Watch – Modern Tech Meets Daily Utility",
+    "price":"2,499",
     "category": "Titan",
     "image":image27
   },
   {
     "id":28,
-    "name": "Lola",
-    "price":13999,
+    "name": "Titan Analog Watch with Brown Leather Strap – Classic Comfort, Timeless Design",
+    "price":"3,799",
     "category": "Titan",
     "image":image28
   },
   {
     "id":29,
-    "name": "Lola",
-    "price":13999,
+    "name": "Titan Couple Watch Combo – Timeless Bond in Matching Elegance (Set of 2)",
+    "price":"6,999",
     "category": "Titan",
     "image":image29
   },
   {
     "id":30,
-    "name": "Lola",
-    "price":13999,
+    "name": "Titan Gold-Tone Watch – Radiant Luxury for Every Occasion",
+    "price":"5,499",
     "category": "Titan",
     "image":image30
   },
   {
     "id":31,
-    "name": "Lola",
-    "price":13999,
+    "name": "Titan Analog Watch with Single Push Clasp – Sleek Fit, Effortless Style",
+    "price":"3,999",
     "category": "Titan",
     "image":image31
   },
   {
     "id":32,
-    "name": "Lola",
-    "price":13999,
+    "name": "Titan Dual-Tone Watch (Silver & Gold) – A Fusion of Class and Contrast",
+    "price":"4,299",
     "category": "Titan",
     "image":image32
   },
   {
     "id":33,
-    "name": "Lola",
-    "price":13999,
+    "name": "Titan Classic Watch with Black Strap – Understated Elegance, Timeless Appeal",
+    "price":"3,299",
     "category": "Titan",
     "image":image33
   },
   {
     "id":34,
-    "name": "Lola",
-    "price":13999,
+    "name": "Titan Digital Sports Watch – Rugged Performance for the Active Lifestyle",
+    "price":"2,799",
     "category": "Titan",
     "image":image34
+  },
+  {
+    "id":35,
+    "name": "Deluxe Large Train Set with Tracks – Realistic Sound & Light Action",
+    "price":"2,799",
+    "category": "Toys",
+    "image":image35
+  },
+  {
+    "id":36,
+    "name": "Vintage Passenger Bus & Yellow Robot Combo – Classic Meets Futuristic Fun (Set of 2)",
+    "price":"4,799",
+    "category": "Toys",
+    "image":image36
+  },
+  {
+    "id":37,
+    "name": "Baby Toy Set – Colorful Mini Toys for Early Learning & Fun (Multi-Pack)",
+    "price":"3,599",
+    "category": "Toys",
+    "image":image37
+  },
+  {
+    "id":38,
+    "name": "Vintage Yellow Airplane Toy – Classic Wings for Timeless Play",
+    "price":"1,299",
+    "category": "Toys",
+    "image":image38
+  },
+  {
+    "id":39,
+    "name": "Colorful Plastic Lattoo – Classic Spinning Fun for Kids",
+    "price":"399",
+    "category": "Toys",
+    "image":image39
+  },
+  {
+    "id":40,
+    "name": "Cute White Teddy Bear – Soft Hugs & Adorable Smiles",
+    "price":"1,399",
+    "category": "Toys",
+    "image":image40
+  },
+  {
+    "id":41,
+    "name": "Vintage Yellow Toy Car – Classic Design with Opening Doors",
+    "price":"1,599",
+    "category": "Toys",
+    "image":image41
+  },
+  {
+    "id":42,
+    "name": "Retro Train Engine with Seated Robot – A Timeless Fusion of Steam & Steel",
+    "price":"4,599",
+    "category": "Toys",
+    "image":image42
+  },
+  {
+    "id":43,
+    "name": "Waving Plastic Cat Toy – Adorable Motion That Brings Joy",
+    "price":"1,599",
+    "category": "Toys",
+    "image":image43
+  },
+  {
+    "id":44,
+    "name": "Realistic Green Toy Car – Life-Like Design for Speedy Adventures",
+    "price":"6,599",
+    "category": "Toys",
+    "image":image44
+  },
+  {
+    "id":45,
+    "name": "Cute Green Dinosaur Toy – Adorable Prehistoric Buddy for Kids",
+    "price":"1,599",
+    "category": "Toys",
+    "image":image45
+  },
+  {
+    "id":46,
+    "name": "Twin Smiley Toy Set in Box – Double the Joy, Double the Fun",
+    "price":"399",
+    "category": "Toys",
+    "image":image46
+  },
+  {
+    "id":47,
+    "name": "Bioderma Pigmentbio Foaming Cream – Brightening Cleanser for Radiant Skin",
+    "price":"1,399",
+    "category": "Cosmatics",
+    "image":image47
+  },
+  {
+    "id":48,
+    "name": "Dual-Use Lip & Cheek Tint – Natural Flush with a Dewy Glow",
+    "price":"799",
+    "category": "Cosmatics",
+    "image":image48
+  },
+  {
+    "id":49,
+    "name": "Nykaa Naturals Face Wash – Gentle Cleanse with Natural Goodness",
+    "price":"1,399",
+    "category": "Cosmatics",
+    "image":image49
+  },
+  {
+    "id":50,
+    "name": "Deep Exfoliating Cleanser – Purifies Pores & Revives Dull Skin",
+    "price":"899",
+    "category": "Cosmatics",
+    "image":image50
+  },
+  {
+    "id":51,
+    "name": "Olay Regenerist Micro-Sculpting Cream – Advanced Anti-Aging Hydration",
+    "price":"2,899",
+    "category": "Cosmatics",
+    "image":image51
+  },
+  {
+    "id":52,
+    "name": "MAC Matte Lipstick – Iconic Red for Bold, Lasting Beauty",
+    "price":"2,399",
+    "category": "Cosmatics",
+    "image":image52
+  },
+  {
+    "id":53,
+    "name": "Huda Beauty Power Bullet Matte Lipstick – Bold Pigment, Luxe Formula",
+    "price":"3,299",
+    "category": "Cosmatics",
+    "image":image53
+  },
+  {
+    "id":54,
+    "name": "Lonely Lioness Plush – Soft Strength with a Quiet Roar",
+    "price":"1,699",
+    "category": "Cosmatics",
+    "image":image54
+  },
+  {
+    "id":55,
+    "name": "CeraVe Hydrating Cleanser – Gentle Face Wash with Ceramides & Hyaluronic Acid",
+    "price":"1,399",
+    "category": "Cosmatics",
+    "image":image55
+  },
+  {
+    "id":56,
+    "name": "Dewy Shimmer Highlighter – Radiant Glow for a Luminous Look",
+    "price":"699",
+    "category": "Cosmatics",
+    "image":image56
+  },
+  {
+    "id":57,
+    "name": "Dove Nourishing Body Wash – Soft, Smooth Skin with Every Shower",
+    "price":"799",
+    "category": "Cosmatics",
+    "image":image57
+  },
+  {
+    "id":58,
+    "name": "Velvet Red Lipstick – Smooth Finish with Intense Color Payoff",
+    "price":"1,399",
+    "category": "Cosmatics",
+    "image":image58
   },
   
  

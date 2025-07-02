@@ -11,13 +11,14 @@ import Businees from './Components/Pages/Businees'
 import Clock from './Components/Pages/Clock'
 import Location from './Components/Pages/Location'
 import Cart from './Components/Pages/Cart'
+import Home from './Components/Pages/Home'
 
 const App = () => {
   return (
     <Router>
       <Navbar/>
       <Routes>
-        <Route path='/' element={<Stores/>}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='/stores' element={<Stores/>}/>
         <Route path='/events' element={<Events/>}/>
         <Route path='/offers' element={<Offers/>}/>

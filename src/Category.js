@@ -28,7 +28,7 @@ export const category = [
   },
   {
     id:5,
-    name:"Cosmatic",
+    name:"Cosmatics",
     image:cosmatic
   },
   {
