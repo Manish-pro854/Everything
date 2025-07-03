@@ -3,7 +3,6 @@ import aeri from "../../assets/aeri.png";
 import american from "../../assets/american.png";
 import aritzia from "../../assets/aritzia.png";
 import athleta from "../../assets/athleta.png";
-import aldo from "../../assets/aldo.jpg"
 import OfferCard from "../Cards/OfferCard";
 import salebg from "../../assets/sale-bg.jpg";
 
@@ -46,7 +45,7 @@ const Offers = () => {
             "Whether you're chasing sunsets on the Amalfi Coast, strolling the streets of Par..."
           }
           link={"Valid from June 24, 2025 to June 30, 2025"}
-          image={aldo}
+          image={american}
         />
 
         <OfferCard
