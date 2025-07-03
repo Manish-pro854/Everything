@@ -15,7 +15,7 @@ const Stores = () => {
     }
   }
   return (
-    <div id="stores" className="pt-40 md:pt-30 lg:pt-20">
+    <div id="stores" className="pt-30 lg:pt-20">
       <div className="w-full h-[70vh] overflow-hidden">
         <img
           src={storebg}

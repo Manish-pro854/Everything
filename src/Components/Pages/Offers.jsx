@@ -9,7 +9,7 @@ import salebg from "../../assets/sale-bg.jpg";
 
 const Offers = () => {
   return (
-    <div id="offers" className="pt-40 md:pt-30 lg:pt-20">
+    <div id="offers" className="pt-30 lg:pt-20">
       <div className="w-full h-[70vh] overflow-hidden">
         <img
           src={salebg}

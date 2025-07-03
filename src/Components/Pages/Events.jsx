@@ -9,7 +9,7 @@ import eventsbg from "../../assets/events-bg.jpg";
 
 const Events = () => {
   return (
-    <div id="events" className="pt-40 md:pt-30 lg:pt-20">
+    <div id="events" className="pt-30 lg:pt-20">
       <div className="w-full h-[70vh] overflow-hidden">
         <img
           src={eventsbg}

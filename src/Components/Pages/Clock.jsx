@@ -3,7 +3,7 @@ import clockbg from "../../assets/clock-bg.jpg";
 
 const Clock = () => {
   return (
-    <div id="clock" className="pt-40 md:pt-30 lg:pt-20">
+    <div id="clock" className="pt-30 lg:pt-20">
       <div className="w-full h-[70vh] overflow-hidden">
         <img
           src={clockbg}

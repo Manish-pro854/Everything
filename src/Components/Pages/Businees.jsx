@@ -7,7 +7,7 @@ import rentbg from "../../assets/rent-bg.jpg";
 
 const Businees = () => {
   return (
-    <div id="rent" className="pt-40 md:pt-30 lg:pt-20">
+    <div id="rent" className="pt-30 lg:pt-20">
       <div className="w-full h-[70vh] overflow-hidden">
         <img
           src={rentbg}

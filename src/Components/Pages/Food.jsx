@@ -24,7 +24,7 @@ import foodbg from "../../assets/food-bg.jpg";
 
 const Food = () => {
   return (
-    <div id="food" className="pt-40 md:pt-30 lg:pt-20">
+    <div id="food" className="pt-30 lg:pt-20">
       <div className="w-full h-[70vh] overflow-hidden">
         <img
           src={foodbg}

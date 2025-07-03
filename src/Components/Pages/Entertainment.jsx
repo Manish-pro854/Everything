@@ -12,7 +12,7 @@ import entertainmentbg from "../../assets/entertainment-bg.jpg";
 
 const Entertainment = () => {
   return (
-    <div id="entertainment" className="pt-40 md:pt-30 lg:pt-20">
+    <div id="entertainment" className="pt-30 lg:pt-20">
       <div className="w-full h-[70vh] overflow-hidden">
         <img
           src={entertainmentbg}

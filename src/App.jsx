@@ -12,11 +12,13 @@ import Clock from './Components/Pages/Clock'
 import Location from './Components/Pages/Location'
 import Home from './Components/Pages/Home'
 import Cart from './Components/Pages/Cart/Cart'
+import ScrollToTop from './ScrollToTop'
 
 const App = () => {
   return (
     <Router>
       <Navbar/>
+      <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/stores' element={<Stores/>}/>

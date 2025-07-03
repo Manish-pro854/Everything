@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { LuClock } from "react-icons/lu";
 import logo from "../../assets/logo.png";
 import { CiLocationOn } from "react-icons/ci";
@@ -13,21 +13,41 @@ import { FaRegNewspaper } from "react-icons/fa";
 import { MdPermDeviceInformation } from "react-icons/md";
 import { MdFastfood } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from "react-redux";
+import { IoChatbox } from "react-icons/io5";
 
 const Navbar = () => {
+  const [chatOpen, setChatOpen] = useState(false);
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
 
-  let dispatch = useDispatch()
-  const cartItemCount = useSelector(state => state.cart.items.length);
+  let dispatch = useDispatch();
+  const cartItemCount = useSelector((state) => state.cart.items.length);
+
+  const [showBottomBar, setShowBottomBar] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBottomBar(window.scrollY < 100); // hide if scroll > 100px
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div id="navbar" className="fixed bg-white z-50 w-full">
-       <div className="grid grid-cols-2 lg:grid-cols-[22%_78%] h-16 md:h-20 relative">
-          <Link to="/" className="outline-0"><img src={logo} alt="logo" className="h-15 pl-2 pt-3 md:h-20 md:pl-5 md:py-3 lg:pt-4 lg:h-19 lg:pl-2" /></Link>
+      <div className="grid grid-cols-2 lg:grid-cols-[22%_78%] h-16 md:h-20 relative">
+        <Link to="/" className="outline-0">
+          <img
+            src={logo}
+            alt="logo"
+            className="h-15 pl-2 pt-3 md:h-20 md:pl-5 md:py-3 lg:pt-4 lg:h-19 lg:pl-2"
+          />
+        </Link>
 
         <div className="hidden lg:flex items-center justify-between">
           <ul className="flex items-center justify-center gap-8 text-xl">
@@ -57,7 +77,14 @@ const Navbar = () => {
             <Link to="/location">
               <CiLocationOn className="text-3xl" />
             </Link>
-            <Link to="/cart"><div className="relative"><FaCartShopping className="text-3xl" /><span className="absolute -right-2 -top-4 font-[600]">{cartItemCount}</span></div></Link>
+            <Link to="/cart">
+              <div className="relative">
+                <FaCartShopping className="text-3xl" />
+                <span className="absolute -right-2 -top-4 font-[600]">
+                  {cartItemCount}
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -66,7 +93,7 @@ const Navbar = () => {
         id="borderimage"
         src={border}
         alt="border"
-        className="h-2 w-screen object-cover block bg-amber-300"
+        className="absolute top-16 md:top-20 left-0 h-2 w-full object-cover bg-amber-300 z-40"
       />
 
       {/* Hamburger Icon */}
@@ -155,8 +182,8 @@ const Navbar = () => {
           </ul>
         </div>
       )}
-      {!menuOpen && (
-        <div className="lg:hidden grid grid-cols-2 md:grid-cols-3 shadow-lg w-full z-30 bg-white">
+      {!menuOpen && showBottomBar && (
+        <div className="lg:hidden grid grid-cols-2 md:grid-cols-3 shadow-lg w-full z-30 bg-white fixed top-[64px] md:top-[80px] pt-2">
           <Link
             to="/clock"
             className="flex items-center justify-center gap-2 p-2 md:p-3 border-b md:border-0 border-amber-200 col-span-2 md:col-span-1 w-full"
@@ -167,18 +194,67 @@ const Navbar = () => {
 
           <Link
             to="/location"
-            className="flex items-center justify-center gap-2 p-2 md:p-3 border-t md:border-x border-amber-200 md:col-span-1 w-full border-r" 
+            className="flex items-center justify-center gap-2 p-2 md:p-3 border-t md:border-x border-amber-200 md:col-span-1 w-full border-r"
           >
             <CiLocationOn className="h-6 w-6 md:h-7 md:w-7 text-green-300" />
             <h1 className="text-base md:text-xl">Getting here</h1>
           </Link>
 
-          <Link to="/cart" className="flex items-center justify-center gap-2 p-2 md:p-3 border-t border-amber-200 md:col-span-1">
+          <Link
+            to="/cart"
+            className="flex items-center justify-center gap-2 p-2 md:p-3 border-t border-amber-200 md:col-span-1"
+          >
             <FaCartShopping className="h-6 w-6 md:h-7 md:w-7 text-green-300" />
             <h1 className="text-base md:text-xl">Cart</h1>
           </Link>
         </div>
       )}
+
+      {/* Floating Chat Icon */}
+      <div className="fixed bottom-1 right-1 md:bottom-3 md:right-3 z-[99]">
+        <div
+          onClick={() => setChatOpen(!chatOpen)}
+          className="cursor-pointer group relative"
+        >
+          <IoChatbox className="h-16 w-16 text-[#87643c] group-hover:text-black transition-all duration-200" />
+          <p className="absolute text-white bottom-6 font-[500] left-3">CHAT</p>
+        </div>
+
+        {/* Chat Form Box */}
+        {chatOpen && (
+          <div className="w-80 p-4 bg-white rounded-2xl shadow-2xl absolute bottom-20 right-0 border border-gray-200 z-[999]">
+            <h3 className="text-xl font-bold mb-4 text-[#87643c]">
+              Chat With Us
+            </h3>
+            <form className="flex flex-col gap-3">
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#87643c]"
+                required
+              />
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#87643c]"
+                required
+              />
+              <textarea
+                placeholder="Your Message"
+                rows="3"
+                className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#87643c]"
+                required
+              />
+              <button
+                type="submit"
+                className="bg-[#87643c] text-white py-2 rounded-lg hover:bg-black transition-all"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
