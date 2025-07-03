@@ -29,7 +29,7 @@ import HomeCard from "../Cards/HomeCard";
 import BusinessCard from "../Cards/BusinessCard";
 import { category } from "../../Category";
 import { dummydata } from "../../dummydata";
-import ProductCard from "../Cards/ProductCard";
+import Product from "../../Product/Product";
 
 // ✅ Combine and duplicate for smooth loop
 const logos = [
@@ -154,7 +154,7 @@ const Home = () => {
         className="w-[100%] flex items-center justify-center p-[10px] gap-8 flex-wrap pb-10"
       >
         {cate.slice(0,7).map((item) => (
-          <ProductCard name={item.name} image={item.image} price={item.price} />
+          <Product name={item.name} image={item.image} price={item.price} />
         ))}
       </div>
     </div>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import storebg from "../../assets/store-bg.jpg";
 import { category } from "../../Category";
 import { dummydata } from "../../dummydata";
-import ProductCard from "../Cards/ProductCard";
+import Product from "../../Product/Product";
 
 const Stores = () => {
   let [cate, setCate] = useState(dummydata);
@@ -44,7 +44,7 @@ const Stores = () => {
         className="w-[100%] flex items-center justify-center p-[10px] gap-8 flex-wrap"
       >
         {cate.map((item) => (
-          <ProductCard name={item.name} image={item.image} price={item.price} />
+          <Product name={item.name} image={item.image} price={item.price} />
         ))}
       </div>
     </div>

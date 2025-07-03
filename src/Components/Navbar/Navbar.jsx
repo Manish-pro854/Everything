@@ -13,12 +13,16 @@ import { FaRegNewspaper } from "react-icons/fa";
 import { MdPermDeviceInformation } from "react-icons/md";
 import { MdFastfood } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
+
+  let dispatch = useDispatch()
+  const cartItemCount = useSelector(state => state.cart.items.length);
 
   return (
     <div id="navbar" className="fixed bg-white z-50 w-full">
@@ -53,7 +57,7 @@ const Navbar = () => {
             <Link to="/location">
               <CiLocationOn className="text-3xl" />
             </Link>
-            <Link to="/cart"><FaCartShopping className="text-3xl" /></Link>
+            <Link to="/cart"><div className="relative"><FaCartShopping className="text-3xl" /><span className="absolute -right-2 -top-4 font-[600]">{cartItemCount}</span></div></Link>
           </div>
         </div>
       </div>
