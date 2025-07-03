@@ -7,6 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa6";
 import border from "../../assets/border.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -32,16 +33,16 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col items-start justify-center gap-4">
-          <div className="flex items-center justify-center gap-2">
-            <CiLocationOn className="text-2xl text-green-400" />
+          <Link to="/location"><div className="flex items-center justify-center gap-2">
+           <CiLocationOn className="text-2xl text-green-400" />
             <h2 className="flex flex-col items-start justify-center">
               Find Us <span>160–194 Main Street, Bacchus Marsh</span>
             </h2>
-          </div>
-          <h1 className="flex items-center justify-center gap-2">
+          </div></Link>
+          <Link to="/clock"><h1 className="flex items-center justify-center gap-2">
             <LuClock className="text-2xl text-green-400" />
             <span>Opening Hours</span>
-          </h1>
+          </h1></Link>
           <h1 className="flex items-center justify-center gap-2">
             <FaFacebook className="text-2xl text-green-400" />
             <span>Follow us for latest events and offers</span>
@@ -55,7 +56,7 @@ const Footer = () => {
         <div className="flex flex-col items-start justify-center gap-2">
           <h1>Centre Opening Hours</h1>
           <h2 className="flex items-center justify-center">
-            Open Now <FaAngleRight />
+            Open Now <FaAngleRight className="h-4"/>
           </h2>
           <p className="-mt-1">10 AM - 9 PM</p>
         </div>
@@ -63,8 +64,8 @@ const Footer = () => {
 
       <div className="flex items-start justify-start px-8 md:pl-20 pt-15">
         <h1 className="text-md">
-          © 2025 Copyright The Village Bacchus Marsh is proudly owned and
-          managed by DeGroup Pty Ltd
+          © 2025 Copyright Everything is proudly owned and
+          managed by  <span className="text-green-500">MANISH AHLAWAT</span>
         </h1>
       </div>
       <img

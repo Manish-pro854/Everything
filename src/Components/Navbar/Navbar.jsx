@@ -15,6 +15,7 @@ import { MdFastfood } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { IoChatbox } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [chatOpen, setChatOpen] = useState(false);
@@ -51,34 +52,88 @@ const Navbar = () => {
 
         <div className="hidden lg:flex items-center justify-between">
           <ul className="flex items-center justify-center gap-8 text-xl">
-            <Link to="/stores">
-              <li className="hover:border-b-2 pb-1">Stores</li>
-            </Link>
-            <Link to="/events">
-              <li className="hover:border-b-2 pb-1">Events</li>
-            </Link>
-            <Link to="/offers">
-              <li className="hover:border-b-2 pb-1">Offers</li>
-            </Link>
-            <Link to="/food">
-              <li className="hover:border-b-2 pb-1">Food+Drink</li>
-            </Link>
-            <Link to="/entertainment">
-              <li className="hover:border-b-2 pb-1">Entertainment</li>
-            </Link>
-            <Link to="/rent">
-              <li className="hover:border-b-2 pb-1">Business Premises</li>
-            </Link>
+            <li>
+              <NavLink
+                to="/stores"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-green-600 border-b-2 pb-1"
+                    : "hover:border-b-2 pb-1"
+                }
+              >
+                Stores
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/events"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-green-600 border-b-2 pb-1"
+                    : "hover:border-b-2 pb-1"
+                }
+              >
+                Events
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/offers"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-green-600 border-b-2 pb-1"
+                    : "hover:border-b-2 pb-1"
+                }
+              >
+                Offers
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/food"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-green-600 border-b-2 pb-1"
+                    : "hover:border-b-2 pb-1"
+                }
+              >
+                Food+Drink
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/entertainment"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-green-600 border-b-2 pb-1"
+                    : "hover:border-b-2 pb-1"
+                }
+              >
+                Entertainment
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/rent"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-green-600 border-b-2 pb-1"
+                    : "hover:border-b-2 pb-1"
+                }
+              >
+                Business Premises
+              </NavLink>
+            </li>
           </ul>
           <div className="flex items-center justify-center gap-5 mr-5">
             <Link to="/clock">
-              <LuClock className="text-3xl" />
+              <LuClock className="text-3xl hover:text-[#47a477]" />
             </Link>
             <Link to="/location">
-              <CiLocationOn className="text-3xl" />
+              <CiLocationOn className="text-3xl hover:text-[#47a477]" />
             </Link>
             <Link to="/cart">
-              <div className="relative">
+              <div className="relative hover:text-[#47a477]">
                 <FaCartShopping className="text-3xl" />
                 <span className="absolute -right-2 -top-4 font-[600]">
                   {cartItemCount}
@@ -128,57 +183,87 @@ const Navbar = () => {
       {menuOpen && (
         <div id="mobilemenu" className="lg:hidden w-full">
           <ul className="flex flex-col items-center justify-center w-full">
-            <Link to="/stores" className="w-full">
-              <li
+            <li className="w-full">
+              <NavLink
+                to="/stores"
                 onClick={closeMenu}
-                className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
+                className={({ isActive }) =>
+                  `flex items-center justify-center gap-2 text-xl w-full p-5 border-b ${
+                    isActive ? "text-green-600" : "hover:text-green-500"
+                  }`
+                }
               >
                 <ImHome className="h-8 w-8 text-green-300" /> Stores
-              </li>
-            </Link>
-            <Link to="/events" className="w-full">
-              <li
+              </NavLink>
+            </li>
+            <li className="w-full">
+              <NavLink
+                to="/events"
                 onClick={closeMenu}
-                className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
+                className={({ isActive }) =>
+                  `flex items-center justify-center gap-2 text-xl w-full p-5 border-b ${
+                    isActive ? "text-green-600" : "hover:text-green-500"
+                  }`
+                }
               >
                 <CiViewList className="h-8 w-8 text-green-300" /> Events
-              </li>
-            </Link>
-            <Link to="/offers" className="w-full">
-              <li
+              </NavLink>
+            </li>
+            <li className="w-full">
+              <NavLink
+                to="/offers"
                 onClick={closeMenu}
-                className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
+                className={({ isActive }) =>
+                  `flex items-center justify-center gap-2 text-xl w-full p-5 border-b ${
+                    isActive ? "text-green-600" : "hover:text-green-500"
+                  }`
+                }
               >
                 <PiCurrencyCircleDollar className="h-8 w-8 text-green-300" />{" "}
                 Offers
-              </li>
-            </Link>
-            <Link to="/food" className="w-full">
-              <li
+              </NavLink>
+            </li>
+            <li className="w-full">
+              <NavLink
+                to="/food"
                 onClick={closeMenu}
-                className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
+                className={({ isActive }) =>
+                  `flex items-center justify-center gap-2 text-xl w-full p-5 border-b ${
+                    isActive ? "text-green-600" : "hover:text-green-500"
+                  }`
+                }
               >
                 <MdFastfood className="h-8 w-8 text-green-300" /> Food+Drinks
-              </li>
-            </Link>
-            <Link to="/entertainment" className="w-full">
-              <li
+              </NavLink>
+            </li>
+            <li className="w-full">
+              <NavLink
+                to="/entertainment"
                 onClick={closeMenu}
-                className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
+                className={({ isActive }) =>
+                  `flex items-center justify-center gap-2 text-xl w-full p-5 border-b ${
+                    isActive ? "text-green-600" : "hover:text-green-500"
+                  }`
+                }
               >
                 <FaRegNewspaper className="h-8 w-8 text-green-300" />{" "}
                 Entertainment
-              </li>
-            </Link>
-            <Link to="/rent" className="w-full">
-              <li
+              </NavLink>
+            </li>
+            <li className="w-full">
+              <NavLink
+                to="/rent"
                 onClick={closeMenu}
-                className="flex items-center justify-center gap-2 text-xl w-full p-5 border-b"
+                className={({ isActive }) =>
+                  `flex items-center justify-center gap-2 text-xl w-full p-5 border-b ${
+                    isActive ? "text-green-600" : "hover:text-green-500"
+                  }`
+                }
               >
                 <MdPermDeviceInformation className="h-8 w-8 text-green-300" />{" "}
                 Business Premises
-              </li>
-            </Link>
+              </NavLink>
+            </li>
           </ul>
         </div>
       )}
