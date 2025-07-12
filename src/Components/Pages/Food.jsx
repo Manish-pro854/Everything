@@ -20,7 +20,7 @@ import bear from "../../assets/bear.webp";
 import bear1 from "../../assets/bear1.webp";
 import bear2 from "../../assets/bear2.jpeg";
 import bear3 from "../../assets/bear3.jpeg";
-import foodbg from "../../assets/food-bg.jpg";
+import foodbg from "../../assets/food-bg.webp";
 
 const Food = () => {
   return (

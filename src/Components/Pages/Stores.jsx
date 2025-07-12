@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import storebg from "../../assets/store-bg.jpg";
+import storebg from "../../assets/store-bg.webp";
 import { category } from "../../Category";
 import { dummydata } from "../../dummydata";
 import Product from "../../Product/Product";

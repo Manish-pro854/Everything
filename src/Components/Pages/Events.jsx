@@ -5,7 +5,7 @@ import yoga from "../../assets/yoga.jpg";
 import trends from "../../assets/trends.jpg";
 import concert from "../../assets/concert.png";
 import music from "../../assets/music.jpg";
-import eventsbg from "../../assets/events-bg.jpg";
+import eventsbg from "../../assets/events-bg.webp";
 
 const Events = () => {
   return (

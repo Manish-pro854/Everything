@@ -8,7 +8,7 @@ import fun from "../../assets/fun.png";
 import fun1 from "../../assets/fun1.jpg";
 import fun2 from "../../assets/fun2.jpg";
 import fun3 from "../../assets/fun3.jpg";
-import entertainmentbg from "../../assets/entertainment-bg.jpg";
+import entertainmentbg from "../../assets/entertainment-bg.webp";
 
 const Entertainment = () => {
   return (

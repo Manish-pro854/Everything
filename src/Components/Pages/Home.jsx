@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import mainbg from "../../assets/main-bg.jpg";
+import mainbg from "../../assets/main-bg.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";

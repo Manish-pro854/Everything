@@ -4,7 +4,7 @@ import american from "../../assets/american.png";
 import aritzia from "../../assets/aritzia.png";
 import athleta from "../../assets/athleta.png";
 import OfferCard from "../Cards/OfferCard";
-import salebg from "../../assets/sale-bg.jpg";
+import salebg from "../../assets/sale-bg.webp";
 
 const Offers = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import clockbg from "../../assets/clock-bg.jpg";
+import clockbg from "../../assets/clock-bg.webp";
 
 const Clock = () => {
   return (

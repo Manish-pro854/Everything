@@ -1,5 +1,5 @@
 import React from 'react'
-import map from "../../assets/map.png"
+import map from "../../assets/map.webp"
 
 const Location = () => {
   return (

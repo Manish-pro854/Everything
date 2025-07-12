@@ -3,7 +3,7 @@ import BusinessCard from "../Cards/BusinessCard";
 import shop1 from "../../assets/shop1.jpg";
 import shop2 from "../../assets/shop2.jpg";
 import shop3 from "../../assets/shop3.jpg";
-import rentbg from "../../assets/rent-bg.jpg";
+import rentbg from "../../assets/rent-bg.webp";
 
 const Businees = () => {
   return (
