@@ -20,7 +20,7 @@ const Entertainment = () => {
           className="w-full h-full object-cover object-center"
         />
       </div>
-      <h1 className="text-center text-6xl pb-5">Entertainment</h1>
+      <h1 className="text-center text-5xl md:text-6xl pb-5">Entertainment</h1>
       <ul className="flex flex-col gap-5 pb-10">
         <StoreCard
           logo={fun}

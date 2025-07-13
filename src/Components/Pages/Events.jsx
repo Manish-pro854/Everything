@@ -1,10 +1,10 @@
 import React from "react";
 import EventCard from "../Cards/EventCard";
-import jeep from "../../assets/jeep.jpg";
-import yoga from "../../assets/yoga.jpg";
+import jeep from "../../assets/jeep.webp";
+import yoga from "../../assets/yoga.webp";
 import trends from "../../assets/trends.jpg";
-import concert from "../../assets/concert.png";
-import music from "../../assets/music.jpg";
+import concert from "../../assets/concert.jpg";
+import music from "../../assets/music.webp";
 import eventsbg from "../../assets/events-bg.webp";
 
 const Events = () => {

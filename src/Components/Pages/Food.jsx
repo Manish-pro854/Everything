@@ -15,12 +15,12 @@ import tcake from "../../assets/tcake.jpg";
 import pizza from "../../assets/pizza.png";
 import pizza1 from "../../assets/pizza1.webp";
 import pizza2 from "../../assets/pizza2.webp";
-import pizza3 from "../../assets/pizza3.jpeg";
+import pizza3 from "../../assets/pizza3.webp";
 import bear from "../../assets/bear.webp";
 import bear1 from "../../assets/bear1.webp";
 import bear2 from "../../assets/bear2.jpeg";
 import bear3 from "../../assets/bear3.jpeg";
-import foodbg from "../../assets/food-bg.webp";
+import foodbg from "../../assets/food-bg.jpg";
 
 const Food = () => {
   return (

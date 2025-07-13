@@ -1,12 +1,11 @@
-import image1 from "./assets/image1.jpg"
-import image2 from "./assets/image2.jpg"
-import image3 from "./assets/image3.jpg"
-import image4 from "./assets/image4.jpg"
-import image5 from "./assets/image5.jpg"
-import image6 from "./assets/image6.jpg"
-import image7 from "./assets/image7.jpg"
-import image8 from "./assets/image8.jpg"
-import image9 from "./assets/image9.jpg"
+import image1 from "./assets/image1.webp"
+import image2 from "./assets/image2.webp"
+import image3 from "./assets/image3.webp"
+import image4 from "./assets/image4.webp"
+import image5 from "./assets/image5.webp"
+import image6 from "./assets/image6.webp"
+import image7 from "./assets/image7.webp"
+import image8 from "./assets/image8.webp"
 import image10 from "./assets/image10.jpg"
 import image11 from "./assets/image11.jpg"
 import image12 from "./assets/image12.png"
@@ -32,18 +31,16 @@ import image31 from "./assets/image31.jpg"
 import image32 from "./assets/image32.jpg"
 import image33 from "./assets/image33.jpg"
 import image34 from "./assets/image34.jpg"
-import image35 from "./assets/image35.jpg"
+import image35 from "./assets/image35.webp"
 import image36 from "./assets/image36.jpg"
-import image37 from "./assets/image37.jpg"
-import image38 from "./assets/image38.jpg"
-import image39 from "./assets/image39.jpg"
+import image37 from "./assets/image37.webp"
+import image38 from "./assets/image38.webp"
+import image39 from "./assets/image39.webp"
 import image40 from "./assets/image40.jpg"
 import image41 from "./assets/image41.jpg"
 import image42 from "./assets/image42.jpg"
 import image43 from "./assets/image43.jpg"
-import image44 from "./assets/image44.jpg"
 import image45 from "./assets/image45.jpg"
-import image46 from "./assets/image46.jpg"
 import image47 from "./assets/image47.jpg"
 import image48 from "./assets/image48.jpg"
 import image49 from "./assets/image49.jpg"
@@ -112,13 +109,6 @@ export const dummydata = [
     "price":"2,495",
     "category": "Addidas",
     "image":image8
-  },
-  {
-    "id":9,
-    "name": "Adidas Men's Brown Casual Sneakers – Street Style Edition",
-    "price":"4,299",
-    "category": "Addidas",
-    "image":image9
   },
   {
     "id":10,
@@ -358,26 +348,13 @@ export const dummydata = [
     "category": "Toys",
     "image":image43
   },
-  {
-    "id":44,
-    "name": "Realistic Green Toy Car – Life-Like Design for Speedy Adventures",
-    "price":"6,599",
-    "category": "Toys",
-    "image":image44
-  },
+  
   {
     "id":45,
     "name": "Cute Green Dinosaur Toy – Adorable Prehistoric Buddy for Kids",
     "price":"1,599",
     "category": "Toys",
     "image":image45
-  },
-  {
-    "id":46,
-    "name": "Twin Smiley Toy Set in Box – Double the Joy, Double the Fun",
-    "price":"399",
-    "category": "Toys",
-    "image":image46
   },
   {
     "id":47,

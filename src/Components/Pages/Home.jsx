@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import mainbg from "../../assets/main-bg.webp";
+import mainbg from "../../assets/main-bg.avif";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -21,7 +21,7 @@ import swiper13 from "../../assets/swiper13.png";
 import swiper14 from "../../assets/swiper14.png";
 import swiper15 from "../../assets/swiper15.jpg";
 import swiper16 from "../../assets/swiper16.png";
-import yoga from "../../assets/yoga.jpg";
+import yoga from "../../assets/yoga.webp";
 import fooddhome from "../../assets/food-home.jpg";
 import offerhome from "../../assets/offer-home.jpg";
 import homeall from "../../assets/home-all.jpg";

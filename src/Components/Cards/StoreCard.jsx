@@ -3,9 +3,9 @@ import React from 'react'
 const StoreCard = ({ logo, title, discription, image1, image2, image3 }) => {
   return (
     <div className="border flex flex-col gap-5 py-3 mx-5 md:mx-10 lg:mx-15">
-      <div className="flex items-center justify-center mx-2 md:mx-10 gap-2 md:gap-5 pt-5 md:pt-0">
+      <div className="flex flex-col md:flex-row items-center justify-center mx-2 md:mx-10 gap-2 md:gap-5 pt-5 md:pt-0">
         <img src={logo} alt="" className='h-15 md:h-20'/>
-      <h2 className='font-[700] text-2xl'>{title}</h2>
+      <h2 className='font-[700] text-2xl text-center'>{title}</h2>
       </div>
       <p className='mx-6 md:mx-15 font-[500] text-md md:-mt-3 pb-5 md:pb-0'>{discription}</p>
       <div className="hidden md:flex flex-wrap items-center justify-center gap-5 w-full">
